@@ -1,7 +1,7 @@
 #![no_main]
 #![feature(allocator_api)]
 
-use basic_bootloader::bootloader::transaction::AbiEncodedTransaction;
+use basic_bootloader::bootloader::transaction::abi_encoded::AbiEncodedTransaction;
 use common::{mutate_transaction, parse_abi_encoded_transaction, serialize_zksync_transaction};
 use libfuzzer_sys::{fuzz_mutator, fuzz_target};
 use std::alloc::Global;

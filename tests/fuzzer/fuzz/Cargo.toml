@@ -159,19 +159,19 @@ bench = false
 # doc = false
 # bench = false
 
-# [[bin]]
-# name = "bootloader_tx_try_from_slice"
-# path = "fuzz_targets/bootloader/bootloader_tx_try_from_slice.rs"
-# test = false
-# doc = false
-# bench = false
+[[bin]]
+name = "bootloader_tx_try_from_slice"
+path = "fuzz_targets/bootloader/bootloader_tx_try_from_slice.rs"
+test = false
+doc = false
+bench = false
 
-# [[bin]]
-# name = "bootloader_tx_parser"
-# path = "fuzz_targets/bootloader/bootloader_tx_parser.rs"
-# test = false
-# doc = false
-# bench = false
+[[bin]]
+name = "bootloader_tx_parser"
+path = "fuzz_targets/bootloader/bootloader_tx_parser.rs"
+test = false
+doc = false
+bench = false
 
 [[bin]]
 name = "bootloader_run_single_interaction"
@@ -201,19 +201,19 @@ test = false
 doc = false
 bench = false
 
-# [[bin]]
-# name = "bootloader_tx_validate"
-# path = "fuzz_targets/bootloader/bootloader_tx_validate.rs"
-# test = false
-# doc = false
-# bench = false
+[[bin]]
+name = "bootloader_tx_validate"
+path = "fuzz_targets/bootloader/bootloader_tx_validate.rs"
+test = false
+doc = false
+bench = false
 
-# [[bin]]
-# name = "bootloader_tx_calculate_signed_hash"
-# path = "fuzz_targets/bootloader/bootloader_tx_calculate_signed_hash.rs"
-# test = false
-# doc = false
-# bench = false
+[[bin]]
+name = "bootloader_tx_calculate_signed_hash"
+path = "fuzz_targets/bootloader/bootloader_tx_calculate_signed_hash.rs"
+test = false
+doc = false
+bench = false
 
 [[bin]]
 name = "precompiles_ecrecover"
@@ -287,14 +287,14 @@ bench = false
 
 [[bin]]
 name = "precompiles_diff_keccak256"
-path = "fuzz_targets/precompiles_diff/sha256.rs"
+path = "fuzz_targets/precompiles_diff/keccak256.rs"
 test = false
 doc = false
 bench = false
 
 [[bin]]
 name = "precompiles_diff_ripemd160"
-path = "fuzz_targets/precompiles_diff/sha256.rs"
+path = "fuzz_targets/precompiles_diff/ripemd160.rs"
 test = false
 doc = false
 bench = false
@@ -344,6 +344,13 @@ bench = false
 [[bin]]
 name = "kzg_blobs"
 path = "fuzz_targets/kzg_blobs/kzg_blobs.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "precompiles_diff_bls2537"
+path = "fuzz_targets/precompiles_diff/bls2537.rs"
 test = false
 doc = false
 bench = false

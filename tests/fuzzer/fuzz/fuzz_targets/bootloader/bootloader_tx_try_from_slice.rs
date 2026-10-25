@@ -1,4 +1,5 @@
 #![no_main]
+#![feature(allocator_api)]
 
 use common::parse_abi_encoded_transaction;
 use libfuzzer_sys::fuzz_target;

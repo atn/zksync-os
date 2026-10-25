@@ -22,8 +22,8 @@ fn fuzz(data: &[u8]) {
     let mut dst1 = Vec::new();
     let mut dst2 = Vec::new();
 
-    let digest: B256 = keccak256(msg);
-    let result_bytes: [u8; 32] = digest.to_fixed_bytes();
+    let digest: B256 = keccak256(&src.as_slice()[0..n]);
+    let result_bytes: [u8; 32] = digest.0;
 
     let r1 = keccak256_forward(&src.as_slice()[0..n], &mut dst1);
     let r1_ok = r1.is_ok();

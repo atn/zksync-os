@@ -52,10 +52,10 @@ enum Mutation {
 
 #[derive(Arbitrary, Debug, Clone)]
 struct Input {
-    #[arbitrary(with = |u: &mut Unstructured| u.int_in_range(0..=2))]
+    #[arbitrary(with = |u: &mut Unstructured| u.int_in_range(0..=6))]
     n_pairs_on_curve: usize,
 
-    #[arbitrary(with = |u: &mut Unstructured| u.int_in_range(0..=1))]
+    #[arbitrary(with = |u: &mut Unstructured| u.int_in_range(0..=3))]
     n_inverse_blocks: usize,
 
     shuffle: bool,
